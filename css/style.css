@@ -91,7 +91,7 @@ h2 {
 
 /* Hover State Styling */
 .card h2:hover {
-    color: #FFD54F;
+    color: hsl(47, 88%, 63%);
     cursor: pointer;
 }
 

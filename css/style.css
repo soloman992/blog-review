@@ -1,0 +1,126 @@
+@font-face {
+    font-family: Figtree;
+    src: url('../fonts/Figtree-VariableFont_wght.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Figtree, sans-serif;
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+.card {
+    width: 290px;
+    background-color: white;
+    border: 1px solid #000;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 7px 7px 1px #000;
+}
+
+.card-image {
+    background: url('../img/illustration-article.svg') no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 18px 18px 9px 18px;
+    height: 150px;
+}
+
+.card-content {
+    padding: 15px 20px;
+}
+
+.tag {
+    background-color: hsl(47, 88%, 63%);
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.publish-date {
+    font-size: 12px;
+    color: hsl(0, 0%, 7%);
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.description {
+    font-size: 14px;
+    color: hsl(0, 0%, 42%);
+    margin-bottom: 20px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.author p{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.author-image {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Hover State Styling */
+.card h2:hover {
+    color: #FFD54F;
+    cursor: pointer;
+}
+
+/* Mobile View Styling */
+@media (max-width: 375px) {
+    body {
+        justify-content: flex-start;
+        padding: 20px;
+        height: auto;
+    }
+
+    .card {
+        width: 100%; /* Full width on mobile */
+        max-width: 400px; /* Max width to prevent stretching on wider screens */
+    }
+
+    .card-content {
+        padding: 15px 20px;
+    }
+
+    .card-image {
+        height: 200px; /* Larger height for mobile view */
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .description {
+        font-size: 13px;
+    }
+}

@@ -89,13 +89,12 @@ h2 {
     margin-right: 10px;
 }
 
-/* Hover State Styling */
-.card h2:hover {
+.card h2:hover,
+.author:hover {
     color: hsl(47, 88%, 63%);
     cursor: pointer;
 }
 
-/* Mobile View Styling */
 @media (max-width: 375px) {
     body {
         justify-content: flex-start;
@@ -104,8 +103,8 @@ h2 {
     }
 
     .card {
-        width: 100%; /* Full width on mobile */
-        max-width: 400px; /* Max width to prevent stretching on wider screens */
+        width: 100%;
+        max-width: 400px;
     }
 
     .card-content {
@@ -113,7 +112,7 @@ h2 {
     }
 
     .card-image {
-        height: 200px; /* Larger height for mobile view */
+        height: 200px;
     }
 
     h2 {
